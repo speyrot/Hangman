@@ -1,0 +1,31 @@
+body {
+    background-color: #eee;
+    margin: 0;
+}
+
+#home {
+    background: linear-gradient(#eee, #aaa);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+
+#home .title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 15%;
+    text-align: center;
+}
+
+#home .button {
+    background: linear-gradient(#afa, #6f6);
+    border-radius: 2px;
+    box-shadow: 0 0 0 5px #090;
+    display: table;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 20% auto;
+}
