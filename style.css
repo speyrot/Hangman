@@ -1,3 +1,5 @@
+/*Main Doc*/
+
 body {
     background-color: #eee;
     margin: 0;
@@ -5,10 +7,6 @@ body {
 
 #home {
     background: linear-gradient(#eee, #aaa);
-    background: -webkit-linear-gradient(top, #eee, #aaa);
-    background: -ms-linear-gradient(top, #eee, #aaa);
-    background: -moz-linear-gradient(top, #eee, #aaa);
-    background: -o-linear-gradient(top, #eee, #aaa);
     bottom: 0;
     left: 0;
     position: absolute;
@@ -25,12 +23,7 @@ body {
 }
 
 #home .button {
-    background: #afa;
     background: linear-gradient(#afa, #6f6);
-    background: -webkit-linear-gradient(top, #afa, #6f6);
-    background: -ms-linear-gradient(top, #afa, #6f6);
-    background: -moz-linear-gradient(top, #afa, #6f6);
-    background: -o-linear-gradient(top, #afa, #6f6);
     border-radius: 2px;
     box-shadow: 0 0 0 5px #090;
     display: table;
@@ -51,13 +44,11 @@ body {
     display: none;
 }
 
+
+/* Results */
+
 #result {
-    background: #700;
     background: linear-gradient(rgba(125, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.7) 80%);
-    background: -webkit-linear-gradient(top, rgba(125, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.7) 80%);
-    background: -ms-linear-gradient(top, rgba(125, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.7) 80%);
-    background: -moz-linear-gradient(top, rgba(125, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.7) 80%);
-    background: -o-linear-gradient(top, rgba(125, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.7) 80%);
     bottom: 0;
     left: 0;
     position: absolute;
@@ -67,12 +58,7 @@ body {
 }
 
 #result[data="true"] {
-    background: #070;
     background: linear-gradient(rgba(0, 125, 0, 0.9) 20%, rgba(0, 0, 0, 0.7) 80%);
-    background: -webkit-linear-gradient(top, rgba(0, 125, 0, 0.9) 20%, rgba(0, 0, 0, 0.7) 80%);
-    background: -ms-linear-gradient(top, rgba(0, 125, 0, 0.9) 20%, rgba(0, 0, 0, 0.7) 80%);
-    background: -moz-linear-gradient(top, rgba(0, 125, 0, 0.9) 20%, rgba(0, 0, 0, 0.7) 80%);
-    background: -o-linear-gradient(top, rgba(0, 125, 0, 0.9) 20%, rgba(0, 0, 0, 0.7) 80%);
 }
 
 #result .title {
@@ -91,12 +77,7 @@ body {
 }
 
 #result .button {
-    background:#afa;
     background: linear-gradient(#afa, #6f6);
-    background: -webkit-linear-gradient(top, #afa, #6f6);
-    background: -ms-linear-gradient(top, #afa, #6f6);
-    background: -moz-linear-gradient(top, #afa, #6f6);
-    background: -o-linear-gradient(top, #afa, #6f6);
     border-radius: 2px;
     box-shadow: 0 0 0 5px #090;
     display: table;
@@ -105,6 +86,9 @@ body {
     margin: 40px auto;
     margin-bottom: 0;
 }
+
+
+/*Blank Letters*/
 
 #letter {
     font-size: 22px;
@@ -127,12 +111,17 @@ body {
     width: 10px;
 }
 
+/*Main Game*/
+
 #game {
     height: 250px;
     margin: auto;
     position: relative;
     width: 220px;
 }
+
+
+/*Player*/
 
 #game .player {
     left: 53px;
@@ -231,4 +220,166 @@ body {
     transform: rotate(-20deg);
     -webkit-transform: rotate(-20deg);
 }
+
+
+/*Guessing*/
+
+#game .stang3 {
+    background-color: #000;
+    height: 20px;
+    left: 90px;
+    position: absolute;
+    top: 70px;
+    width: 2px;
+}
+
+#game .stang3[data="false"] {
+    display: none;
+}
+
+#game .stang2 {
+    background-color: #000;
+    border-radius: 5px 0 0 5px;
+    bottom: 180px;
+    height: 5px;
+    position: absolute;
+    right: 45px;
+    width: 95px;
+}
+
+#game .stang2:before {
+    background-color: #000;
+    content: "";
+    left: 50px;
+    height: 5px;
+    position: absolute;
+    top: 17px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 50px;
+}
+
+#game .stang2[data="false"] {
+    display: none;
+}
+
+#game .stang {
+    background-color: #000;
+    bottom: 0;
+    height: 180px;
+    margin: auto;
+    position: absolute;
+    right: 45px;
+    width: 5px;
+}
+
+#game .stang[data="false"] {
+    display: none;
+}
+
+#game .ground {
+    background-color: #000;
+    border-radius: 5px;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 220px;
+}
+
+#game .ground[data="false"] {
+    display: none;
+}
+
+#game .hintButton {
+    background: #ccc;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+    border-radius: 8%;
+    box-shadow: 1px 1px 3px #999;
+    font-weight: bold;
+    padding: 5px 10px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+#game .hintButton[data="false"] {
+    display: none;
+}
+
+
+/*Keyword*/
+
+#tastatur {
+    background-color: rgba(238, 238, 238, 0.9);
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 500px;
+    padding: 0 15px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+#moveKeybord {
+    padding: 15px;
+}
+
+.marg {
+    border-bottom: solid 2px #ccc;
+}
+
+
+/*Hint*/
+
+#hint {
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px #888;
+    display: none;
+    left: 0;
+    margin: auto;
+    margin-top: 75px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 250px;
+}
+
+#hint .title {
+    background: #fff;
+    background: linear-gradient(#fff, #bbb);
+    background: -webkit-linear-gradient(top, #fff, #bbb);
+    background: -ms-linear-gradient(top, #fff, #bbb);
+    background: -moz-linear-gradient(top, #fff, #bbb);
+    background: -o-linear-gradient(top, #fff, #bbb);
+    border-bottom: solid 1px #555;
+    border-radius: 2px 2px 0 0;
+    font-weight: bold;
+    padding: 5px 10px;
+    position: relative;
+}
+
+#hint .title .exit {
+    background-color: #f55;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px #888;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+}
+
+#hint .body {
+    background-color: #ddd;
+    border-radius: 0 0 2px 2px;
+    padding: 10px;
+}
+
+
+/*Keyboard Letter Styling*/
 
