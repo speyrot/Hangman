@@ -13,7 +13,7 @@ var word = [
 ]
 
 //Keyboard
-var tastatur = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const tastatur = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 //Memory
 var select = 0

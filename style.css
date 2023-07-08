@@ -310,7 +310,7 @@ body {
 }
 
 
-/*Keyword*/
+/*Keyboard*/
 
 #tastatur {
     background-color: rgba(238, 238, 238, 0.9);
@@ -383,3 +383,54 @@ body {
 
 /*Keyboard Letter Styling*/
 
+.b {
+    background: #eee;
+    background: linear-gradient(#fff, #eee);
+    background: -webkit-linear-gradient(top, #fff, #eee);
+    background: -ms-linear-gradient(top, #fff, #eee);
+    background: -moz-linear-gradient(top, #fff, #eee);
+    background: -o-linear-gradient(top, #fff, #eee);
+    box-shadow: 1px 1px 1px 0 #ccc;
+    display: inline-block;
+    margin: 2px;
+    padding: 8px;
+    text-align: center;
+    width: 25px;
+}
+
+.b[data="false"], .b[data="true"] {
+    color: #555;
+    font-weight: bold;
+}
+
+.b[data="true"] {
+    background: #9f9;
+}
+
+.b[data="false"] {
+    background: #aaa;
+}
+
+.anim {
+    animation: button 3s infinite;
+    -webkit-animation: button 3s infinite;
+}
+
+@keyframes button {
+    0%, 50%, 90% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    60% {
+        transform: rotate(5deg) scale(1);
+        -webkit-transform: rotate(5deg) scale(1);
+    }
+    70% {
+        transform: rotate(-5deg) scale(0.97);
+        -webkit-transform: rotate(-5deg) scale(0.97);
+    }
+    80% {
+        transform: rotate(5deg) scale(1.05);
+        -webkit-transform: rotate(5deg) scale(1.05);
+    }
+}
